@@ -47,7 +47,6 @@ describe('Item Model Unit Tests:', function() {
         });
 
         it('should be able to save item name exactly as written', function(done) {
-            console.log(item.itemName);
             var newItem = new Item({
                 itemName: 'Item    .   {% $  @   One',
                 user: user
