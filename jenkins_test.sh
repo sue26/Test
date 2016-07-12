@@ -3,5 +3,5 @@ istanbul cover node_modules/.bin/_mocha -- -r server.js -R tap app/tests/* > tes
 
 echo '<<<EXECUTING ESLINT>>>'
 echo '111'
-eslint -c .eslintrc.js -f checkstyle app/**/*.js > checkstyle-result.xml
+#eslint -c .eslintrc.js -f checkstyle app/**/*.js > checkstyle-result.xml
 
