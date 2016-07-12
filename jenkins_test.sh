@@ -5,4 +5,5 @@ echo '<<<EXECUTING ESLINT>>>'
 echo '111'
 ./node_modules/.bin/eslint -c eslint.conf -f checkstyle app/**/*.js > checkstyle-result.xml
 echo '222'
-./node_modules/.bin/eslint -f checkstyle app/**/*.js > checkstyle-result.xml
+export PATH=/usr/local/bin:node_modules/.bin/eslint:$PATH;
+eslint -f checkstyle app/**/*.js > checkstyle-result.xml
