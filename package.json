@@ -44,7 +44,7 @@
     "swig": "~1.4.1"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
+    "eslint": "^3.0.1",
     "eslint-config-google": "^0.6.0",
     "grunt-concurrent": "~1.0.0",
     "grunt-contrib-csslint": "^0.3.1",
