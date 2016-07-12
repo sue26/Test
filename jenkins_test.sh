@@ -2,10 +2,10 @@ echo '<<<EXECUTING ISTANBUL>>>'
 istanbul cover node_modules/.bin/_mocha -- -r server.js -R tap app/tests/* > test.tap && istanbul report clover
 
 echo '<<<CHANGE INDEX.JS TO PREVENT ERROR>>>'
-echo ''use strict';
+echo '\'use strict\';
       module.exports = function(x) {
-      	if (typeof x !== 'string') {
-      		throw new TypeError('Expected a string, got ' + typeof x);
+      	if (typeof x !== \'string\') {
+      		throw new TypeError(\'Expected a string, got \' + typeof x);
       	}
 
       	// Catches EFBBBF (UTF-8 BOM) because the buffer-to-string
